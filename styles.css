@@ -86,7 +86,7 @@ input{
 #play-button{
     background-color: transparent;
     border: 2px solid var(--secondary-color);
-    width: 150px;
+    width: 180px;
     height: 5rem;
     font-size: 2.5rem;
 }
@@ -94,4 +94,19 @@ input{
 button{
     border: none;
     cursor: pointer;
+}
+
+.empty-slot{
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 500px) {
+    body{
+        overflow-y: scroll;
+    }
+    #player-names-container{
+        flex-direction: column;
+        gap:1rem;
+        margin-bottom: 1rem;
+    }
 }
